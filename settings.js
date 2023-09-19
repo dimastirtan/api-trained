@@ -1,14 +1,23 @@
 const fs = require('fs')
 
-// Api
-global.APIs = {
-	alfa: 'https://api.zeeoneofc.my.id',
+// apikey
+global.lann = '7jh7USsh'
+// apikeylu di ganti menggunakan apikey yang di dapatkan di website https://api.betabotz.org. contohnya global.lann = 'nans' (contoh). cara mendapatkan apikey. masuk website > scroll ke bawah dan cari harga yang kamu mau ada juga yang free dan tekan > otomatis akan di arahkan untuk registrasi, isi data diri email dll. > kalo sudah klik profil dan di situ akan muncul apikey mu. terima kasih.
+
+global.APIKeys = { // APIKey Here
+  // 'https://website': 'apikey'
+  'https://api-fgmods.ddns.net': 'mhdAnan',
+  'https://api.betabotz.org': '7jh7USsh'
 }
 
-// Apikey
-global.APIKeys = {
-	'https://api.zeeoneofc.my.id': 'ka2bUiXoFhKpSZ9',
+global.APIs = { // API Prefix
+  // name: 'https://website'
+  nrtm: 'https://fg-nrtm.ddns.net',
+  fgmods: 'https://api-fgmods.ddns.net',
+  lann: 'https://api.betabotz.org'
 }
+
+//
 
 global.namabot = "_Zull-Assistant_"
 global.namaowner = "*BAYU RIZKI ZULFIKRI*"
