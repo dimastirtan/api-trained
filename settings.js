@@ -7,7 +7,7 @@ global.APIs = {
 
 // Apikey
 global.APIKeys = {
-	'https://api.zeeoneofc.my.id': 'ka2bUiXoFhKpSZ9',
+	'https://api.zeeoneofc.my.id': 'i2xBTRqxwQoiwxY',
 }
 //
 //
