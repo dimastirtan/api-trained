@@ -629,7 +629,7 @@ ${isSurender ? '' : ``}`.trim()
             case 'alcakenya':
             case 'mangayutri': {
                 reply(mess.wait)
-                let res = await fetch(global.api('alfa', '/api/asupan/' + command, {}, 'apikey'))
+                let res = await fetch(global.api('beta', '/api/random/asupanrandom?type=video&apikey=miftah'))
                 if (!res.ok) throw await res.text()
                 let img = await res.buffer()
                 alpha.sendFile(m.chat, img, 'asupan.mp4', mess.done, m)
@@ -674,10 +674,10 @@ ${isSurender ? '' : ``}`.trim()
             case "dohkyungsoo":
             case "baekhyung": {
                 reply(mess.wait)
-                let res = await fetch(global.api('alfa', '/api/cogan/' + command, {}, 'apikey'))
+                let res = await fetch(global.api('beta', '/api/18/xnxx/search?title=step%20mom&apikey=miftah'))
                 if (!res.ok) throw await res.text()
                 let img = await res.buffer()
-                alpha.sendFile(m.chat, img, 'cogan.jpg', mess.done, m)
+                alpha.sendFile(m.chat, img, 'cogan.mp4', mess.done, m)
             }
             break
             //download
