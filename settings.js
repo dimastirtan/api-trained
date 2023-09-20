@@ -20,9 +20,9 @@ global.packname = namabot
 global.author = namaowner
 global.myweb = "https://wa.me/6283821362840?text=assalamualaikum"
 global.footer_text = "© " + namabot
-global.pp_bot = fs.readFileSync("./image/foto2.jpg")
+global.pp_bot = fs.readFileSync("./image/profile.gif")
 global.qris = fs.readFileSync("./image/qris2.jpg")
-global.owner = ['6283821362840','6281511073726']
+global.owner = ['6283821362840','6282246997688','6281511073726']
 global.sessionName = 'session'
 global.background = "https://telegra.ph/file/40342e0085d521cb8b907.jpg" //maks size 50kb agar welcome nya gk lemot
 global.prefa = ['-_-']
