@@ -3,11 +3,13 @@ const fs = require('fs')
 // Api
 global.APIs = {
 	alfa: 'https://api.zeeoneofc.my.id',
+	alfa: 'https://api.miftahganzz.my.id',
 }
 
 // Apikey
 global.APIKeys = {
 	'https://api.zeeoneofc.my.id': 'i2xBTRqxwQoiwxY',
+	'https://api.miftahganzz.my.id/': 'miftah'
 }
 //
 //
