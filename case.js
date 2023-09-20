@@ -629,7 +629,7 @@ ${isSurender ? '' : ``}`.trim()
             case 'alcakenya':
             case 'mangayutri': {
                 reply(mess.wait)
-                let res = await fetch(global.api('beta', '/api/random/asupanrandom?type=video&apikey=miftah'))
+                let res = await fetch(global.api('alfa', '/api/asupan/' + command, {}, 'apikey'))
                 if (!res.ok) throw await res.text()
                 let img = await res.buffer()
                 alpha.sendFile(m.chat, img, 'asupan.mp4', mess.done, m)
@@ -825,8 +825,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'play': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} judul lagu\n\nContoh penggunaan:\n${prefix+command} bot WhatsApp Zeeoneofc`)
-                //if (isUrl(text)) return reply(`Kirim perintah:\n${prefix+command} judul lagu\n\nContoh penggunaan:\n${prefix+command} bot WhatsApp Zeeoneofc`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} judul lagu\n\nContoh penggunaan:\n${prefix+command} bot WhatsApp ZullAssistant`)
+                //if (isUrl(text)) return reply(`Kirim perintah:\n${prefix+command} judul lagu\n\nContoh penggunaan:\n${prefix+command} bot WhatsApp ZullAssistant`)
                 reply(mess.wait)
                 let res = await fetch(global.api('alfa', '/api/downloader/youtube-search', {
                     query: text
@@ -874,8 +874,8 @@ ${isSurender ? '' : ``}`.trim()
             break
             case 'yts':
             case 'ytsearch': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} judul lagu/video\n\nContoh penggunaan:\n${prefix+command} bot WhatsApp Zeeoneofc`)
-                //if (isUrl(text)) return reply(`Kirim perintah:\n${prefix+command} judul lagu/video\n\nContoh penggunaan:\n${prefix+command} bot WhatsApp Zeeoneofc`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} judul lagu/video\n\nContoh penggunaan:\n${prefix+command} bot WhatsApp ZullAssistant`)
+                //if (isUrl(text)) return reply(`Kirim perintah:\n${prefix+command} judul lagu/video\n\nContoh penggunaan:\n${prefix+command} bot WhatsApp ZullAssistant`)
                 reply(mess.wait)
                 let res = await fetch(global.api('alfa', '/api/downloader/youtube-search', {
                     query: text
@@ -1190,8 +1190,8 @@ ${isSurender ? '' : ``}`.trim()
             case "youtubegold":
             case "youtubesilver":
             case "zombie3d": {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks\n\nContoh penggunaan:\n${prefix+command} zeeoneofc`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks\n\nContoh penggunaan:\n${prefix+command} zeeoneofc`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks\n\nContoh penggunaan:\n${prefix+command} ZullAssistant`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks\n\nContoh penggunaan:\n${prefix+command} ZullAssistant`)
                 reply(mess.wait)
                 let res = await fetch(global.api('alfa', '/api/ephoto360/' + command, {
                     text: text
@@ -1227,8 +1227,8 @@ ${isSurender ? '' : ``}`.trim()
 
             //logo maker
             case 'coverbannerlol': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|heroes\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|pyke-7`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|heroes\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|pyke-7`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|heroes\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|pyke-7`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|heroes\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|pyke-7`)
                 var arg = args.join(' ')
                 atas = arg.split('|')[0]
                 bawah = arg.split('|')[1]
@@ -1250,8 +1250,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'pubglogomaker': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|style\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|women`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|style\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|women`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|style\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|women`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|style\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|women`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -1273,8 +1273,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'colorfulpubg': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|color\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|green-yellow`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|color\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|green-yellow`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|color\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|green-yellow`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|color\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|green-yellow`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -1296,8 +1296,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'astronotspace': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|style\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|panther`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|style\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|panther`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|style\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|panther`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|style\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|panther`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -1319,8 +1319,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'wallpaperaov': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|heroes\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|preyta-2`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|heroes\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|preyta-2`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|heroes\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|preyta-2`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|heroes\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|preyta-2`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -1342,8 +1342,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'maketeamlogo': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|style\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|panda`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|style\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|panda`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|style\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|panda`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|style\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|panda`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -1365,8 +1365,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'circlemarcotteam': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|logo\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|bear`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|logo\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|bear`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|logo\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|bear`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|logo\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|bear`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -1388,8 +1388,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'wallpaperml': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|heroes\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|chou`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|heroes\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|chou`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|heroes\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|chou`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|heroes\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|chou`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -1411,8 +1411,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'dragonballfb': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|character\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|kale`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|character\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|kale`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|character\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|kale`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|character\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|kale`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -1434,8 +1434,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'bannerofaov': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|character\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|swain`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|character\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|swain`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|character\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|swain`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|character\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|swain`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -1457,8 +1457,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'effect3donbeach': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|background\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|beach-5`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|background\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|beach-5`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|background\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|beach-5`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|background\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|beach-5`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -1480,8 +1480,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'cutegirlgamer': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|logo\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|style-3`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|logo\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|style-3`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|logo\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|style-3`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|logo\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|style-3`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -1503,8 +1503,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'footballteam': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|logo\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|nau-5`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|logo\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|nau-5`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|logo\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|nau-5`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|logo\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|nau-5`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -1526,8 +1526,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'beautifulshimmering': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|champion\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|nina`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|champion\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|nina`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|champion\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|nina`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|champion\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|nina`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -1549,8 +1549,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'pubgcutelogo': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|logo\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|chicken`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|logo\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|chicken`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|logo\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|chicken`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|logo\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|chicken`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -1572,8 +1572,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'elegantrotation': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|logo\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|dragon`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|logo\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|dragon`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|logo\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|dragon`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|logo\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|dragon`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -1595,8 +1595,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'logogamingassasin': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|logo\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|style-1`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|logo\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|style-1`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|logo\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|style-1`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|logo\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|style-1`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -1618,8 +1618,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'introvideomaker': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|logo\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|dragon`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|logo\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|dragon`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|logo\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|dragon`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|logo\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|dragon`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -1641,8 +1641,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'gaminglogo4fvs': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|logo\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|soldier`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|logo\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|soldier`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|logo\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|soldier`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|logo\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|soldier`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -1664,8 +1664,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'blueneon': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|logo\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|lion`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|logo\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|lion`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|logo\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|lion`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|logo\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|lion`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -1687,8 +1687,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'metalmascot': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|logo\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|lion`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|logo\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|lion`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|logo\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|lion`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|logo\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|lion`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -1710,8 +1710,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'anonymous2': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|style\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|style1`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|style\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|style1`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|style\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|style1`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|style\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|style1`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -1733,8 +1733,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'lolpentakill': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|style\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|nocturne`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|style\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|nocturne`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|style\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|nocturne`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|style\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|nocturne`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -1756,8 +1756,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'avatarleagueofking': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|style\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|ilumia-5`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|style\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|ilumia-5`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|style\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|ilumia-5`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|style\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|ilumia-5`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -1779,8 +1779,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'avatarff': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|character\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|alok`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|character\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|alok`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|character\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|alok`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|character\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|alok`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -1802,8 +1802,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'overwatchwallpaper': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|character\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|lucio`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|character\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|lucio`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|character\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|lucio`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|character\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|lucio`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -1825,8 +1825,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'rovwallpaperhd': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|hero\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|keera`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|hero\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|keera`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|hero\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|keera`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|hero\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|keera`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -1848,8 +1848,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'rovwallpaper': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|avatar\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|grakk-6`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|avatar\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|grakk-6`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|avatar\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|grakk-6`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|avatar\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|grakk-6`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -1871,8 +1871,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'beautifulgalaxylol': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|style\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|khazix-2`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|style\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|khazix-2`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|style\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|khazix-2`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|style\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|khazix-2`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -1894,8 +1894,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'crossfirecover': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|character\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|natahari`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|character\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|natahari`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|character\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|natahari`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|character\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|natahari`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -1917,8 +1917,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'lolwallpaper': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|wallpaper\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|fizz`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|wallpaper\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|fizz`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|wallpaper\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|fizz`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|wallpaper\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|fizz`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -1940,8 +1940,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'coverdota2': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|heroes\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|luna`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|heroes\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|luna`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|heroes\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|luna`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|heroes\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|luna`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -1963,8 +1963,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'coverleagueofking': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|character\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|nina`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|character\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|nina`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|character\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|nina`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|character\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|nina`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -1986,8 +1986,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'avatar3q360': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|avatar\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|truong_phi`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|avatar\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|truong_phi`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|avatar\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|truong_phi`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|avatar\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|truong_phi`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -2009,8 +2009,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'coverofwarface': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|character\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|warface`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|character\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|warface`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|character\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|warface`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|character\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|warface`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -2032,8 +2032,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'newlolavatar': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|avatar\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|shyvana`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|avatar\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|shyvana`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|avatar\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|shyvana`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|avatar\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|shyvana`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -2055,8 +2055,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'csgocover': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|background\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|negev`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|background\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|negev`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|background\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|negev`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|background\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|negev`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -2078,8 +2078,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'coverloknew': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|hero\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|ilumia-5`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|hero\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|ilumia-5`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|hero\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|ilumia-5`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|hero\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|ilumia-5`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -2101,8 +2101,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'coverfblol': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|letters\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|nami`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|letters\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|nami`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|letters\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|nami`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|letters\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|nami`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -2124,8 +2124,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'overwatchcover': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|hero\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|zsymmetra`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|hero\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|zsymmetra`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|hero\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|zsymmetra`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|hero\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|zsymmetra`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -2147,8 +2147,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'crossfirestyle': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|avatar\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|thefates`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|avatar\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|thefates`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|avatar\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|thefates`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|avatar\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|thefates`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -2170,8 +2170,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'avatarlolbyname': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|style\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|zyra-4`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|style\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|zyra-4`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|style\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|zyra-4`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|style\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|zyra-4`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -2193,8 +2193,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'lolcoverbyname': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|avatar\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|xinzhao`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|avatar\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|xinzhao`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|avatar\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|xinzhao`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|avatar\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|xinzhao`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -2216,8 +2216,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'cyberhunterfb': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|character\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|1`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|character\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|1`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|character\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|1`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|character\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|1`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -2239,8 +2239,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'coverfreefirefb': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|character\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|laura`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|character\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|laura`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|character\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|laura`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|character\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|laura`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -2262,8 +2262,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'gamingmascot': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|style\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|bear`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|style\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|bear`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|style\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|bear`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|style\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|bear`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -2285,8 +2285,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'coveronepiecefb': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|character\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|ace`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|character\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|ace`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|character\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|ace`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|character\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|ace`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -2308,8 +2308,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'bannerytcsgo': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|template\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|banner-7`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|template\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|banner-7`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|template\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|banner-7`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|template\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|banner-7`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -2331,8 +2331,8 @@ ${isSurender ? '' : ``}`.trim()
             }
             break
             case 'fbgamepubgcover': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|template\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|cover-4`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|template\n\nContoh penggunaan:\n${prefix+command} zeeoneofc|cover-4`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks|template\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|cover-4`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks|template\n\nContoh penggunaan:\n${prefix+command} ZullAssistant|cover-4`)
                 var mon = args.join(' ')
                 var m1 = mon.split("|")[0]
                 var m2 = mon.split("|")[1]
@@ -3704,8 +3704,8 @@ ${isSurender ? '' : ``}`.trim()
             case 'shadow-sky':
             case 'text-cup':
             case 'coffecup': {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks\n\nContoh penggunaan:\n${prefix+command} zeeoneofc`)
-                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks\n\nContoh penggunaan:\n${prefix+command} zeeoneofc`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks\n\nContoh penggunaan:\n${prefix+command} ZullAssistant`)
+                if (!text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks\n\nContoh penggunaan:\n${prefix+command} ZullAssistant`)
                 reply(mess.wait)
                 let res = await fetch(global.api('alfa', '/api/photooxy/' + command, {
                     text: text
@@ -3771,7 +3771,7 @@ ${isSurender ? '' : ``}`.trim()
 4. ${prefix}foliokanan
 
 Contoh:
-${prefix}nuliskiri Subscribe Ya YT zeeoneofc`)
+${prefix}nuliskiri Subscribe Ya YT ZullAssistant`)
                 break
             case 'foliokiri':
             case 'foliokanan':
@@ -3939,8 +3939,8 @@ ${prefix}nuliskiri Subscribe Ya YT zeeoneofc`)
             case "xmas":
             case "yellow-glass":
             case "yellow-jewelry": {
-                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks\n\nContoh penggunaan:\n${prefix+command} zeeoneofc`)
-                if (text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks\n\nContoh penggunaan:\n${prefix+command} zeeoneofc`)
+                if (!text) return reply(`Kirim perintah:\n${prefix+command} teks\n\nContoh penggunaan:\n${prefix+command} ZullAssistant`)
+                if (text.includes('|')) return reply(`Kirim perintah:\n${prefix+command} teks\n\nContoh penggunaan:\n${prefix+command} ZullAssistant`)
                 reply(mess.wait)
                 let res = await fetch(global.api('alfa', '/api/textpro/' + command, {
                     text: text
