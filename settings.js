@@ -3,13 +3,11 @@ const fs = require('fs')
 // Api
 global.APIs = {
 	alfa: 'https://api.zeeoneofc.my.id',
-	beta: 'https://api.miftahganzz.my.id',
 }
 
 // Apikey
 global.APIKeys = {
-	'https://api.zeeoneofc.my.id': 'ka2bUiXoFhKpSZ9',
-	'https://api.miftahganzz.my.id': 'miftah'
+	'https://api.zeeoneofc.my.id': 'ubaymld',
 }
 //
 //
@@ -18,7 +16,7 @@ global.namabot = "_Zull-Assistant_"
 global.namaowner = "*BAYU RIZKI ZULFIKRI*"
 global.packname = namabot
 global.author = namaowner
-global.myweb = "https://wa.me/6283821362840?text=assalamualaikum"
+global.myweb = "https://bayu-r-z.blogspot.com/"
 global.footer_text = "© " + namabot
 global.pp_bot = fs.readFileSync("./image/profile.gif")
 global.qris = fs.readFileSync("./image/qris2.jpg")
@@ -69,7 +67,7 @@ menu(pushname, salam, mundur, upload, download, totalGb, usedGb, freeGb, ownerNa
 ┆❐ Date : ${tanggal}
 ┆❐ Runtime : ${runtime}
 ╰──────────◇
-
+❐ _GA KEBAYANG NOMOR LU DI GBAN SAMA SI ARTUR KALO NYEPAM_
 ╭✄┈┈┈⟬ *ANIME* ⟭
 ┆❐ ${prefix}akame
 ┆❐ ${prefix}anna
@@ -781,7 +779,6 @@ menu(pushname, salam, mundur, upload, download, totalGb, usedGb, freeGb, ownerNa
 ┆❐ ${prefix}antilink
 ┆❐ ${prefix}antilink2
 ┆❐ ${prefix}hidetag
-┆❐ _GA KEBAYANG NOMOR LU DI GBAN SAMA SI ARTUR KALO NYEPAM_
 ╰──────────◇
 `
 }
